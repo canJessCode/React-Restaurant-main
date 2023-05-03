@@ -1,9 +1,6 @@
 import React from "react";
-import { explores } from "../Data";
 import { footerContacts } from "../Data";
 import { footerSocials } from "../Data";
-import { mainMenu } from "../Data";
-import { payements } from "../Data";
 
 const Footer = () => {
   return (
@@ -16,37 +13,19 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             <span className="">Follow Us</span>
-            <div className="h-[2px] w-12 bg-black"></div>
+            <div className="h-[3px] w-6 bg-black"></div>
             {footerSocials.map((footerSocial, index) => {
               return (
-                <div className="" key={index}>
-                  <a href="#">{footerSocial}</a>
+                <div className="text-[30px]" key={index}>
+                  <a href="https://www.facebook.com/shansushibar">{footerSocial}</a>
                 </div>
               );
             })}
           </div>
         </div>
         <div className="grid grid-cols-2">
-          <div>
-            <h3 className="font-semibold text-[1.1rem] mb-4">Main Menu</h3>
-            {mainMenu.map((menu) => {
-              return (
-                <div className="text-[1rem] mb-2" key={menu.id}>
-                  <a href={`#${menu.href}`}>{menu.text}</a>
-                </div>
-              );
-            })}
-          </div>
-          <div className="">
-            <h3 className="font-semibold text-[1.1rem]  mb-4">Explore</h3>
-            {explores.map((explore, index) => {
-              return (
-                <div className="text-[1rem] mb-2" key={index}>
-                  <a href="#">{explore}</a>
-                </div>
-              );
-            })}
-          </div>
+
+
         </div>
         <div className="">
           <h3 className="font-semibold text-[1.1rem] mb-4">Contact</h3>
@@ -64,19 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-between gap-4 pb-8">
-        <div className="">
-          Copyright &#169; <span className="font-bold">Ye Lin Ko</span>.All
-          rights deserved.
-        </div>
-        <div className="flex gap-2">
-          {payements.map((payment, index) => {
-            return (
-              <div className="" key={index}>
-                <img src={payment} alt="" className="w-10" />
-              </div>
-            );
-          })}
-        </div>
+
       </div>
     </div>
   );

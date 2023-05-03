@@ -1,6 +1,4 @@
-import { FaArrowRight } from "react-icons/fa";
 import React from "react";
-import { heroIcons } from "../Data";
 import shanSushiBanner from '../assets/shanSushiBanner.jpg'
 
 const Home = () => {
@@ -10,7 +8,8 @@ const Home = () => {
       id="home"
     >
 
-      <img src={shanSushiBanner} alt="shan rice logo banner" class="object-contain" />
+      <img src={shanSushiBanner} alt="shan rice logo banner min-w-full" />
+
       <div className="flex flex-col items-start gap-10">
         <div className="sm:text-[2.5rem] text-[1.8rem] font-bold">
           Delicious Japanese Cuisine
