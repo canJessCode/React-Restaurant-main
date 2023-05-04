@@ -4,7 +4,7 @@ import { footerSocials } from "../Data";
 
 const Footer = () => {
   return (
-    <div className="section">
+    <div className="section bg-gray-200">
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 mb-8">
         <div>
           <div className="text-xl font-semibold mb-3">Shan Sushi</div>
