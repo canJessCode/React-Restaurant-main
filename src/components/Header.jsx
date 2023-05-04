@@ -18,7 +18,7 @@ const Header = () => {
 
       <nav className="relative container mx-auto flex items-center justify-between  ">
         <div className="">
-          <h4 className="text-3xl font-semibold mt-[4px]">Shan Sushi</h4>
+          <h4 className="text-5xl font-semibold mt-[10px]">Shan Sushi</h4>
           <span className="text-[1rem] font-bold opacity-80 m-[2px]">
             Sushi Restaurant
           </span>
